@@ -1,9 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
-import heroImage from '../assets/img/hero.webp'
 
-const { src = heroImage } = Astro.props
+const { src = '/hero.webp' } = Astro.props
 ---
 
 <section class="hero my-24">
@@ -11,11 +10,11 @@ const { src = heroImage } = Astro.props
     <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
         <h1 class="text-center text-6xl md:text-left lg:text-7xl">
-          <slot
-            ><span class="text-gradient">Retro games</span> with <span class="text-gradient">soul</span>, built with <span
+          <slot>
+            <span class="text-gradient">Retro games</span> with <span class="text-gradient">soul</span>, built with <span
               class="text-gradient">passion</span
-            ></slot
-          >
+            >
+          </slot>
         </h1>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
           <a class="button has-icon" href="https://store.steampowered.com/app/2750120/Sunken_Shadows/">
@@ -28,7 +27,15 @@ const { src = heroImage } = Astro.props
           </a>
         </div>
       </div>
-      <Image class="hidden lg:block" src={src} loading="eager" alt="Sunken Shadows screenshot" decoding="async" />
+      <Image
+        class="hidden lg:block"
+        src={src}
+        loading="eager"
+        alt="Sunken Shadows screenshot"
+        decoding="async"
+        width={711}
+        height={743}
+      />
     </div>
   </div>
 </section>
