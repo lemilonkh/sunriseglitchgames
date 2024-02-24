@@ -6,11 +6,11 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 
 const {
-  title = 'Astro',
-  description = 'A starter project with accessibility features using Astro static site builder. Contains accessible landmarks, skip links, a dark mode color scheme, better focus outline and keyboard menu navigation.',
+  title = 'Sunrise Glitch Games',
+  description = 'Game studio building retro 3D games with Godot Engine',
   url,
   image = '/social-preview-image.png',
-  author = 'Mark Teekman',
+  author = 'Sunrise Glitch Games',
 } = Astro.props
 ---
 
@@ -28,7 +28,7 @@ const {
       description={description.substring(0, 100)}
       url={Astro.site
         ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
-        : `https://accessible-astro.dev/${title.toLowerCase().replaceAll(' ', '-')}`}
+        : `https://gruner.tech/sunriseglitchgames/${title.toLowerCase().replaceAll(' ', '-')}`}
       image={image}
       author={author}
     />
