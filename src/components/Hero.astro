@@ -1,7 +1,9 @@
 ---
 import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import heroImage from '../assets/img/hero.webp'
 
-const { src = '/hero-img.webp' } = Astro.props
+const { src = heroImage } = Astro.props
 ---
 
 <section class="hero my-24">
@@ -9,23 +11,24 @@ const { src = '/hero-img.webp' } = Astro.props
     <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
         <h1 class="text-center text-6xl md:text-left lg:text-7xl">
-          <slot><span class="text-gradient">Retro games</span> with <span class="text-gradient">soul</span>, built with <span class="text-gradient">passion</span></slot>
+          <slot
+            ><span class="text-gradient">Retro games</span> with <span class="text-gradient">soul</span>, built with <span
+              class="text-gradient">passion</span
+            ></slot
+          >
         </h1>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
           <a class="button has-icon" href="https://store.steampowered.com/app/2750120/Sunken_Shadows/">
             <Icon name="simple-icons:steam" />
             Wishlist on Steam
           </a>
-          <a
-            class="button has-icon color-secondary"
-            href="https://discord.gg/BhDaMS5S9P"
-          >
+          <a class="button has-icon color-secondary" href="https://discord.gg/BhDaMS5S9P">
             <Icon name="simple-icons:discord" />
             Join our Discord
           </a>
         </div>
       </div>
-      <img class="hidden lg:block" src={src} alt="" decoding="async" />
+      <Image class="hidden lg:block" src={src} loading="eager" alt="Sunken Shadows screenshot" decoding="async" />
     </div>
   </div>
 </section>
