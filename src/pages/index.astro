@@ -4,6 +4,7 @@ import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
 // import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
+import { YouTube } from '@astro-community/astro-embed-youtube'
 ---
 
 <DefaultLayout title="Home">
@@ -11,6 +12,7 @@ import ContentMedia from '../components/ContentMedia.astro'
   <section class="my-64">
     <div class="container">
       <h2 class="mb-16 text-6xl">Games</h2>
+      <!--
       <img
         class="mb-16 hidden rounded-2xl lg:block"
         src="/sunken-shadows-capsule-main.webp"
@@ -18,6 +20,10 @@ import ContentMedia from '../components/ContentMedia.astro'
         decoding="async"
         loading="lazy"
       />
+      -->
+      <div class="rounded-2xl mb-16 drop-shadow-lg">
+        <YouTube id="g97w2IHBWI4" poster="/sunken-shadows-capsule-main.webp" />
+      </div>
       <div class="mb-16">
         <iframe
           src="https://store.steampowered.com/widget/2750120/"
