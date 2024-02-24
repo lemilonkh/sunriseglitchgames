@@ -11,7 +11,13 @@ import ContentMedia from '../components/ContentMedia.astro'
   <section class="my-64">
     <div class="container">
       <h2 class="mb-16 text-6xl">Games</h2>
-      <img class="hidden lg:block rounded-2xl mb-16" src="/sunken-shadows-capsule-main.webp" alt="Sunken Shadows" decoding="async" />
+      <img
+        class="mb-16 hidden rounded-2xl lg:block"
+        src="/sunken-shadows-capsule-main.webp"
+        alt="Sunken Shadows"
+        decoding="async"
+        loading="lazy"
+      />
       <div class="mb-16">
         <iframe
           src="https://store.steampowered.com/widget/2750120/"
@@ -22,28 +28,38 @@ import ContentMedia from '../components/ContentMedia.astro'
       </div>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
         <Feature icon="mdi:dice" title="Roguelike">
-          Explore procedurally generated dungeons full of hidden treasures, traps and puzzles. Made from hand-built rooms to ensure a fun playing experience and interesting discoveries.
+          Explore procedurally generated dungeons full of hidden treasures, traps and puzzles. Made from hand-built
+          rooms to ensure a fun playing experience and interesting discoveries.
         </Feature>
         <Feature icon="mdi:arrow-up" title="Upgrades">
-          Each time you find or buy an upgrade item, you are offered the choice of 3 different upgrades of different rarities. Choose wisely and build cool new synergies. Some upgrades are cursed and require you to sacrifice in order to gain their powerful abilities.
+          Each time you find or buy an upgrade item, you are offered the choice of 3 different upgrades of different
+          rarities. Choose wisely and build cool new synergies. Some upgrades are cursed and require you to sacrifice in
+          order to gain their powerful abilities.
         </Feature>
         <Feature icon="mdi:emoticon-devil-outline" title="Challenging bosses">
-          The demo will have two different boss fights, one at the end of each biome. The full game will feature plenty more. Each boss has their own patterns and special attacks to learn.
+          The demo will have two different boss fights, one at the end of each biome. The full game will feature plenty
+          more. Each boss has their own patterns and special attacks to learn.
         </Feature>
         <Feature icon="mdi:pine-tree-multiple-outline" title="Different biomes">
-          Explore lots of varied biomes with different enemies, traps, secrets and bosses to find. You start in the ruined city, journey onwards to the coral reef and to the Leviathan depths. As you get deeper, the environment and enemies will get progressively more corrupted.
+          Explore lots of varied biomes with different enemies, traps, secrets and bosses to find. You start in the
+          ruined city, journey onwards to the coral reef and to the Leviathan depths. As you get deeper, the environment
+          and enemies will get progressively more corrupted.
         </Feature>
         <Feature icon="mdi:person-multiple-add-outline" title="Multiple characters">
-          By unlocking achievements, you gain access to new starting charaters. They come with different items and upgrades and offer a new way to experience the game and build synergies based on their starting gear.
+          By unlocking achievements, you gain access to new starting charaters. They come with different items and
+          upgrades and offer a new way to experience the game and build synergies based on their starting gear.
         </Feature>
         <Feature icon="mdi:temperature-increase" title="Difficulty modifiers">
-          The game adjusts to your skill by offering you new challenges once you've mastered the basics. This comes with increased rewards, but lots of additional peril as well.
+          The game adjusts to your skill by offering you new challenges once you've mastered the basics. This comes with
+          increased rewards, but lots of additional peril as well.
         </Feature>
         <Feature icon="mdi:clothes-hanger" title="Unlockable skins">
-          You can purchase visual customizations using the emeralds you find in chests or for completing hard challenges and puzzles.
+          You can purchase visual customizations using the emeralds you find in chests or for completing hard challenges
+          and puzzles.
         </Feature>
         <Feature icon="mdi:cursor-move" title="Level editor">
-          Create your own challenges and custom rooms using the included level editor. Send us your coolest builds and we might feature them in a future update!
+          Create your own challenges and custom rooms using the included level editor. Send us your coolest builds and
+          we might feature them in a future update!
         </Feature>
         <Feature icon="mdi:controller" title="Controller support">
           Play with any common controller or use mouse and keyboard. The game and UI is fully controller navigable.
@@ -54,14 +70,15 @@ import ContentMedia from '../components/ContentMedia.astro'
   <ContentMedia imgSrc="/screenshot2.webp" reverseImg={true}>
     <h2>Dangerous enemies and traps</h2>
     <p class="text-2xl">
-      Fight through hordes of enemies, each with their own strategies and weaknesses.
-      Avoid tricky traps placed by the builders of the ruined ancient city you're exploring.
+      Fight through hordes of enemies, each with their own strategies and weaknesses. Avoid tricky traps placed by the
+      builders of the ruined ancient city you're exploring.
     </p>
   </ContentMedia>
   <ContentMedia imgSrc="/screenshot1.webp">
     <h2>Retro graphics enhanced with modern effects</h2>
     <p class="text-2xl">
-      We use low poly models and pixel art textures, combined with modern lighting, shaders and particles to give the game a unique art style.
+      We use low poly models and pixel art textures, combined with modern lighting, shaders and particles to give the
+      game a unique art style.
     </p>
   </ContentMedia>
   <!--
