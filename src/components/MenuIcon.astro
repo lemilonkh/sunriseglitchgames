@@ -1,0 +1,15 @@
+---
+import { Icon } from 'astro-icon/components'
+const { url = '/', title = 'Visit page', icon = 'mdi:question-mark' } = Astro.props
+---
+
+<li class="menu-item type-icon">
+  <a
+    href={url}
+    title={title}
+    aria-label={title}
+    rel="external noopener noreferrer"
+  >
+    <Icon name={icon} />
+  </a>
+</li>

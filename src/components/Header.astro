@@ -1,7 +1,7 @@
 ---
 import Navigation from '../components/Navigation.astro'
 import { SkipLinks } from 'accessible-astro-components'
-import { Icon } from 'astro-icon/components'
+import MenuIcon from '../components/MenuIcon.astro'
 ---
 
 <header>
@@ -24,36 +24,24 @@ import { Icon } from 'astro-icon/components'
     <!--<li class="menu-item">
       <a href="/about/">About</a>
     </li>-->
-    <li class="menu-item type-icon">
-      <a href="https://store.steampowered.com/app/2750120/Sunken_Shadows/" title="Go to Steam page" rel="external noopener noreferrer">
-        <Icon name="simple-icons:steam" />
-      </a>
-    </li>
-    <li class="menu-item type-icon">
-      <a href="https://twitter.com/Sunken_Shadows" title="Go to Twitter page" rel="external noopener noreferrer">
-        <Icon name="simple-icons:twitter" />
-      </a>
-    </li>
-    <li class="menu-item type-icon">
-      <a href="https://www.youtube.com/@SunriseGlitchGames" title="Go to YouTube page" rel="external noopener noreferrer">
-        <Icon name="simple-icons:youtube" />
-      </a>
-    </li>
-    <li class="menu-item type-icon">
-      <a href="https://discord.gg/BhDaMS5S9P" title="Go to Discord server" rel="external noopener noreferrer">
-        <Icon name="simple-icons:discord" />
-      </a>
-    </li>
-    <li class="menu-item type-icon">
-      <a href="https://www.tiktok.com/@sunriseglitchgames" title="Go to TikTok page" rel="external noopener noreferrer">
-        <Icon name="simple-icons:tiktok" />
-      </a>
-    </li>
-    <li class="menu-item type-icon">
-      <a href="https://www.instagram.com/sunriseglitchgames/" title="Go to Instagram page" rel="external noopener noreferrer">
-        <Icon name="simple-icons:instagram" />
-      </a>
-    </li>
+    <MenuIcon
+      url="https://store.steampowered.com/app/2750120/Sunken_Shadows/"
+      title="Go to Steam page"
+      icon="simple-icons:steam"
+    />
+    <MenuIcon url="https://twitter.com/Sunken_Shadows" title="Go to Twitter page" icon="simple-icons:twitter" />
+    <MenuIcon
+      href="https://www.youtube.com/@SunriseGlitchGames"
+      title="Go to YouTube page"
+      icon="simple-icons:youtube"
+    />
+    <MenuIcon url="https://discord.gg/BhDaMS5S9P" title="Go to Discord server" icon="simple-icons:discord" />
+    <MenuIcon url="https://www.tiktok.com/@sunriseglitchgames" title="Go to TikTok page" icon="simple-icons:tiktok" />
+    <MenuIcon
+      url="https://www.instagram.com/sunriseglitchgames/"
+      title="Go to Instagram page"
+      icon="simple-icons:instagram"
+    />
   </Navigation>
 </header>
 
