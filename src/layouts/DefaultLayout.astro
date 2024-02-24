@@ -7,8 +7,8 @@ import Footer from '../components/Footer.astro'
 
 const {
   title = 'Sunrise Glitch Games',
+  subtitle = 'Sunrise Glitch Games',
   description = 'Game studio building retro 3D games with Godot Engine',
-  url,
   image = '/social-preview-image.png',
   author = 'Sunrise Glitch Games',
 } = Astro.props
@@ -25,6 +25,7 @@ const {
 
     <SiteMeta
       title={title}
+      subtitle={subtitle}
       description={description.substring(0, 100)}
       url={Astro.site
         ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
