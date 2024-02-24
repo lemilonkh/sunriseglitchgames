@@ -2,7 +2,7 @@
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
-import Counter from '../components/Counter.astro'
+// import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
 ---
 
@@ -11,7 +11,8 @@ import ContentMedia from '../components/ContentMedia.astro'
   <section class="my-64">
     <div class="container">
       <h2 class="mb-16 text-6xl">Games</h2>
-      <div class="mb-8">
+      <img class="hidden lg:block rounded-2xl mb-16" src="/sunken-shadows-capsule-main.webp" alt="Sunken Shadows" decoding="async" />
+      <div class="mb-16">
         <iframe
           src="https://store.steampowered.com/widget/2750120/"
           width="646"
@@ -49,23 +50,20 @@ import ContentMedia from '../components/ContentMedia.astro'
       </div>
     </div>
   </section>
-  <ContentMedia imgSrc="/accessible-components.webp">
-    <h2>Accessible Components</h2>
+  <ContentMedia imgSrc="/screenshot2.webp" reverseImg={true}>
+    <h2>Dangerous enemies and traps</h2>
     <p class="text-2xl">
-      This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <a href="https://github.com/markteekman/accessible-astro-components"
-        >separate package</a
-      >. They'll get you up and running in building an accessible solution for your visitors.
+      Fight through hordes of enemies, each with their own strategies and weaknesses.
+      Avoid tricky traps placed by the builders of the ruined ancient city you're exploring.
     </p>
   </ContentMedia>
-  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-    <h2>WCAG 2.1 AA Compliant</h2>
+  <ContentMedia imgSrc="/screenshot1.webp">
+    <h2>Retro graphics enhanced with modern effects</h2>
     <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
+      We use low poly models and pixel art textures, combined with modern lighting, shaders and particles to give the game a unique art style.
     </p>
   </ContentMedia>
+  <!--
   <section class="mb-32 mt-64">
     <div class="container">
       <h2 class="mb-16 text-6xl">Counters</h2>
@@ -77,4 +75,5 @@ import ContentMedia from '../components/ContentMedia.astro'
       </div>
     </div>
   </section>
+  -->
 </DefaultLayout>
